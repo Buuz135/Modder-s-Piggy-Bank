@@ -28,6 +28,8 @@ jobs:
         with:
           curseforge-id: 1084640
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          modrinth-id: 5RO5CdUY
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           files: |
             fabric/build/libs/!(*-@(javadoc|sources)).jar
             fabric/build/libs/*-@(javadoc|sources).jar
@@ -44,8 +46,10 @@ jobs:
       - name: Publish Minecraft Mods NeoForge
         uses: Kir-Antipov/mc-publish@v3.3.0
         with:
-          curseforge-id: 1070541
+          curseforge-id: 1084640
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+          modrinth-id: 5RO5CdUY
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
           files: |
             neoforge/build/libs/!(*-@(javadoc|sources)).jar
             neoforge/build/libs/*-@(javadoc|sources).jar
