@@ -29,8 +29,9 @@ public class CommonClass {
         INFORMATION = AUTHOR_INFORMATION.values().stream().toList();
         loadMinified();
 
-        Constants.ALLOWED_SCREEN_CLASSES.add(TitleScreen.class);
-        Constants.ALLOWED_SCREEN_CLASSES.add(OptionsScreen.class);
+        Constants.ALLOWED_SCREEN_CLASSES.add("TitleScreen");
+        Constants.ALLOWED_SCREEN_CLASSES.add("OptionsScreen");
+        Constants.ALLOWED_SCREEN_CLASSES.add("ExtendedMenuScreen");
 
         Constants.ALLOWED_LINKS.put("ko-fi", "Ko-fi");
         Constants.ALLOWED_LINKS.put("github-sponsor", "Github Sponsor");

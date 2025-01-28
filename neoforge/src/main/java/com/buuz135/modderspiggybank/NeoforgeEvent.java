@@ -20,8 +20,8 @@ import java.util.Map;
 public class NeoforgeEvent {
 
     @SubscribeEvent
-    public static void onGui(ScreenEvent.Init.Pre event){
-        if (Constants.ALLOWED_SCREEN_CLASSES.contains(event.getScreen().getClass())) {
+    public static void onGui(ScreenEvent.Init.Post event){;
+        if (Constants.ALLOWED_SCREEN_CLASSES.contains(event.getScreen().getClass().getSimpleName()) || true) {
             event.addListener(CommonClass.getRandomWidget());
         }
     }

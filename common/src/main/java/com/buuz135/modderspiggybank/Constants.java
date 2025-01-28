@@ -16,7 +16,7 @@ public class Constants {
 
 	public static final String MINIFIED_URL = "https://raw.githubusercontent.com/Buuz135/Modders-Piggy-Bank-Repository/refs/heads/main/mod-authors.min.json";
 
-	public static final List<Class> ALLOWED_SCREEN_CLASSES = new ArrayList<>();
+	public static final List<String> ALLOWED_SCREEN_CLASSES = new ArrayList<>();
 	public static HashMap<String, String> ALLOWED_LINKS = new HashMap<>();
 
 	public static final Random RANDOM = new Random();

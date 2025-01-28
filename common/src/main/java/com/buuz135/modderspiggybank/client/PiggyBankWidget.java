@@ -51,8 +51,8 @@ public class PiggyBankWidget extends AbstractWidget {
             this.width = Math.max(width, Minecraft.getInstance().font.width(line));
         }
         this.width += 10;
-
-        var seconds = (System.currentTimeMillis() / 1000) / 4;
+        var seconds = 1d;
+        if (mods.size() > 3) seconds = (System.currentTimeMillis() / 1000) / 4;
         var modIndex = (int) (seconds % mods.size());
         lines.add(mods.get(modIndex));
         if (mods.size() > 1) lines.add(mods.get((modIndex + 1) % mods.size()));

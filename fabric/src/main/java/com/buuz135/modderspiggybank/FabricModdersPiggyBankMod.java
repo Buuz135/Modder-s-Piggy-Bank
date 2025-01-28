@@ -25,7 +25,7 @@ public class FabricModdersPiggyBankMod implements ModInitializer {
         }
         CommonClass.init(authorList);
         ScreenEvents.AFTER_INIT.register((client, screen, scaledWidth, scaledHeight) -> {
-            if (Constants.ALLOWED_SCREEN_CLASSES.contains(screen.getClass())) {
+            if (Constants.ALLOWED_SCREEN_CLASSES.contains(screen.getClass().getSimpleName())) {
                 Screens.getButtons(screen).add(CommonClass.getRandomWidget());
             }
         });
