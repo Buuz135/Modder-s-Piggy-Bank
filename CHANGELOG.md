@@ -1,3 +1,6 @@
+# 1.0.2
+* Removed debug condition
+
 # 1.0.1
 * Fixed special case where mods would use an array in their author data
 * Added custom main menu screen
