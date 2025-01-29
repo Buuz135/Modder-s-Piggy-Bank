@@ -1,3 +1,6 @@
+# 1.0.3
+* Fixed fabric minecraft filter
+
 # 1.0.2
 * Removed debug condition
 
